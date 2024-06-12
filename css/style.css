@@ -1,5 +1,19 @@
+/* variaveis das cores*/
+/* TEMA DARK*/
 :root, :root[data-thame="dark"] {
-    --primary-color:#ffffff;  
-    --primary-bg-color:#111217;
+    --primary-color:#ffffff; /*cor principal texto */
+    --primary-bg-color:#18191a; /* cor principal do fundo*/
+
+
+
+}
+/* TEMA LIGT*/
+:root[data-theme='light']{
+    --primary-color: #0000; 
+    --primary-bg-color: #8f94a6;
 }
 
+body {
+    background: var(--primary-bg-color); /*cor fundo*/ 
+    color: var(--primary-color); /* cor geral dos textos*/
+}
