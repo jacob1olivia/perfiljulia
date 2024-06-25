@@ -1,3 +1,7 @@
+/* google fonts */ /* atalho para comentario shift + alt + A */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* variaveis das cores*/
 /* TEMA DARK*/
 :root, :root[data-thame="dark"] {
