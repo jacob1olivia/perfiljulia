@@ -7,17 +7,76 @@
 :root, :root[data-thame="dark"] {
     --primary-color:#ffffff; /*cor principal texto */
     --primary-bg-color:#18191a; /* cor principal do fundo*/
-
-
+    --secondary-bg-color: #28292e;
+    --primary-border-color: #28292e;
+    --secondary-border-color: #56575a;
+    --title-color: #F0F0F0;
+    --link-hover: #8f8f9f;
+    --link-color: #f0f0f0;
+    --icon-color: #c7c8c9;
 
 }
 /* TEMA LIGT*/
 :root[data-theme='light']{
-    --primary-color: #0000; 
-    --primary-bg-color: #8f94a6;
+    --primary-color: #332a2a00; /* cor principal textos/cor do fundo  */
+    
+    --primary-bg-color: #f0f2f5; /* cor do fundo */
+    --secondary-bg-color: #C7C8C9;
+   
+    --primary-border-color: #C7C8C9; /* cor da borda */
+    --secondary-border-color: #9a9a9c;
+
+    --title-color: #0b0b0f;
+    --link-hover: #a3a2a2;
+    --link-color: #0b0b0f;
+    --icon-color: #56575a;
 }
+
+/* reset CSS */
+* {
+    margin: 0; /* margem */
+    padding: 0; /* prenchimento  */
+    box-sizing: border-box;  /*dimensionamento de caixa */
+    vertical-align: baseline;
+    list-style: none;
+    scrollbar-width: thin; /* barra de rolagem */
+    scrollbar-color: var(--secondary-bg-color) transparent;
+}
+
+
 
 body {
     background: var(--primary-bg-color); /*cor fundo*/ 
     color: var(--primary-color); /* cor geral dos textos*/
+    font-family:'Playwrite', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration:none;
+    color: var(--link-hover)
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+
+i {
+    color: var(--icon-color);
+}
+.header {
+    display: flex;
+    flex-flow: row wrap;    /* coloca o conteudo em linha e permite a quebra de linha */
+    justify-content: space-between;   /* os intens dentro do container (caixa) flexivel serão distribuidos de maneira uniforme ao longo do eixo principal, com espaços iguais entre elas */
+
+
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem; /* O primeiro muda encima e embaixo, o segundo muda a direita e esquerda */
+    z-index: 2; /* sobreposição ou profundidade   */
+}
+
+.header-logo .logo{
+    width: 3.25rem;
+    height: 3.25rem;
 }
