@@ -17,7 +17,7 @@
 
 }
 /* TEMA LIGT*/
-:root[data-theme='light']{
+:root[data-theme='light'] {
     --primary-color: #332a2a00; /* cor principal textos/cor do fundo  */
     
     --primary-bg-color: #f0f2f5; /* cor do fundo */
