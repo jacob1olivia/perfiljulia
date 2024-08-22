@@ -9,7 +9,7 @@
     --primary-bg-color:#18191a; /* cor principal do fundo*/
     --secondary-bg-color: #28292e;
     --primary-border-color: #28292e;
-    --secondary-border-color: #56575a;
+    --secondary-border-color: #e0e1e6;
     --title-color: #F0F0F0;
     --link-hover: #8f8f9f;
     --link-color: #f0f0f0;
@@ -18,13 +18,13 @@
 }
 /* TEMA LIGT*/
 :root[data-theme='light'] {
-    --primary-color: #332a2a00; /* cor principal textos/cor do fundo  */
+    --primary-color: #0c0101; /* cor principal textos/cor do fundo  */
     
     --primary-bg-color: #f0f2f5; /* cor do fundo */
     --secondary-bg-color: #C7C8C9;
    
     --primary-border-color: #C7C8C9; /* cor da borda */
-    --secondary-border-color: #9a9a9c;
+    --secondary-border-color: #c6c6c9;
 
     --title-color: #0b0b0f;
     --link-hover: #a3a2a2;
@@ -153,15 +153,48 @@ html[data-theme='light'] .logo2 {
     font-size: .75rem;
 }
  
-
 .header-nav {
     display: none;
 }
- 
+
 .menu-principal {
     gap: 1rem;
 }
 
+.menu-social {
+    gap: 1rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.62rem;
+    width: 100%;
+    background: transparent;
+    border-radius: 3rem;
+    color: var(--secondary-border-color);
+    border: none;
+    cursor: none;
+    padding: 0.5rem 1.5rem;
+    transition: ease-in-out .3s;
+}
+
+.btn-primary {
+    border: 1px solid var(--secondary-border-color);
+}
+
+ .btn:hover {
+    transform: scale(1.05);
+    transition: ease-in-out .3s;
+ }
+
+ .btn span, 
+ .btn i {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    
+ }
 
 /* ------------------------------------------- */
 
