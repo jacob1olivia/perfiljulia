@@ -195,8 +195,27 @@ html[data-theme='light'] .logo2 {
     text-transform: uppercase;
     
  }
+#home{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
 
+.video iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+#home, .projetos, .sobre, .contato {
+    padding: 5rem 5rem;
+}
 /* ------------------------------------------- */
+
 
 /* CSS responsivo */
 @media (min-width: 768px) {
