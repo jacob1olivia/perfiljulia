@@ -179,7 +179,6 @@ html[data-theme='light'] .logo2 {
     padding: 0.5rem 1.5rem;
     transition: ease-in-out .3s;
 }
-
 .btn-primary {
     border: 1px solid var(--secondary-border-color);
 }
@@ -192,8 +191,7 @@ html[data-theme='light'] .logo2 {
  .btn span, 
  .btn i {
     font-size: 1.25rem;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;   
  }
 #home{
     display: flex;
@@ -205,17 +203,14 @@ html[data-theme='light'] .logo2 {
     flex-direction: column;
     gap: 1.5rem;
 }
-
 .video iframe{
     width: 100%;
     aspect-ratio: 16/9;
 }
-
 #home, .projetos, .sobre, .contato {
     padding: 5rem 5rem;
 }
 /* ------------------------------------------- */
-
 
 /* CSS responsivo */
 @media (min-width: 768px) {
@@ -243,8 +238,13 @@ html[data-theme='light'] .logo2 {
     flex-direction: column;
     gap: 4rem; 
 }
+.projetos-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
-.card-cover{ /* codido para mexer nas img */
+.card-cover{ /* codigo para mexer nas img */
     width: 100%;
     border-radius: 2rem;
     object-fit: cover;
@@ -307,4 +307,45 @@ html[data-theme='light'] .logo2 {
     .header-nav {
         display: flex  ;
     }
-}  
+    .header-nav,
+    .header-toggle {
+        min-width: 30%;
+    }
+    h1 {
+        font-size: 4,5rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    #home, .projetos .sobre, .contato {
+        padding: 8rem 6rem 4rem 6rem;
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contato {
+        padding:6rem ;
+    }
+    .contato p {
+        width: 80;
+    }
+    footer {
+        margin: 0%;
+    }
+}  /* fim da resolução 768 */
+
+/* inicio resolução 992 */
+@media (min-width: 992px) {
+    .projetos-card {
+        flex-direction: row;
+    }
+    .card-reverse {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .card-cover {
+        width: 55%;
+    }
+}
