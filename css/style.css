@@ -300,7 +300,28 @@ html[data-theme='light'] .logo2 {
     border: 1px solid var(--primary-border-color);
 }
 
+.accordion-item.active .accordion-item.end {
+    border-radius: 0;
+}
 
+.accordion-body {
+    /* display: none; */
+    padding: 1.25rem;
+    flex-direction: column;
+    text-align: justify;
+    align-items: flex-start;
+    gap: 1rem;
+    border: 1px solid var(--primary-border-color);
+}
+
+.accordion-item.active .accordion-header {
+    background: var(--secondary-bg-color);
+}
+
+.accordion-item.active .accordion-body {
+    display: flex;
+}
+ 
 
 
 
