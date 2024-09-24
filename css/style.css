@@ -74,6 +74,7 @@ i {
     width: 100%;
     padding: 0.5rem 1rem; /* O primeiro muda encima e embaixo, o segundo muda a direita e esquerda */
     z-index: 2; /* sobreposição ou profundidade   */
+    background: var(--secondary-bg-color);
 }
 
 .header-logo .logo{
@@ -321,11 +322,38 @@ html[data-theme='light'] .logo2 {
 .accordion-item.active .accordion-body {
     display: flex;
 }
- 
+ .accordion-item.active .bi-caret-down-fill {
+    transform: rotate(180deg);
+ }
 
+ /* contato */
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0,5;
+    border-top: 1px solid var(--primary-border-color); border-bottom: 2px solid var(--secondary-border-color);
+}
 
+.contato .btn {
+    width: auto;
+}
 
+.contato .email {
+    text-transform: uppercase;
+}
 
+/* roda pé footer */
+footer {
+    margin-bottom: 5rem;
+}
+
+footer p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
 /* ------------------------------------------- */
 
 /* CSS responsivo */
