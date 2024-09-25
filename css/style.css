@@ -264,7 +264,7 @@ html[data-theme='light'] .logo2 {
 
 /* cursor  */
 .accordion-header {
-    width: 100;
+    width: 100%;
     display: flex;
     padding: 0.75rem 1rem; 
     justify-content: space-between;
@@ -513,6 +513,13 @@ footer p {
         align-items: flex-start;
         gap: 4rem;
     }
+
+    .sobre-descricao h2 {
+        text-align: left;
+    }
+    .descricao-button {
+        justify-content: flex-start;
+    }
 }
 
 @media (min-width:1200px ){
@@ -543,4 +550,12 @@ footer p {
     h3 {
         font-size: 3.25rem;
     }
+    .header {
+        padding: 1rem, 5rem, 2rem;
+    }
+    .projetos, .sobre {
+        padding: 10rem 15rem 4rem;
+    }
 }
+
+
